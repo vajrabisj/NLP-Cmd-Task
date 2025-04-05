@@ -179,6 +179,6 @@
      :headers {"Content-Type" "text/plain"}
      :body "Not Found"}))
 
-(server/run-server handler {:port 8080})
-(println "Server running at http://localhost:8080")
+(server/run-server handler {:ip "0.0.0.0" :port 8080})
+(println "Server running at http://0.0.0.0:8080")
 @(promise)
